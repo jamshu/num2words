@@ -63,10 +63,10 @@ def num2words(number, ordinal=False, lang='en'):
         value =converter.to_ordinal(number)
         value =value.replace(',',"")
         value =value.replace('points',"and")
-        return value
+        return value.upper()
     else:
         print "value cardinal>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>"
         value = converter.to_cardinal(number)
         value =value.replace(',',"")
         value =value.replace('point',"and")
-        return value
+        return value.upper()
